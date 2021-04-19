@@ -1,2 +1,2 @@
-# bricked-hand-counter
+# Bricked Hand Counter
 Counts the number of bricked hands.
