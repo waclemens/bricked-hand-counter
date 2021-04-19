@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brick Counter</title>
+    <link href="brick-counter.css" rel="stylesheet" type="text/css">
+    <script src="brick-counter.js"></script>
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="menu-item">
+        <strong><span>Select Cards:<br></span></strong>
+        <input type="radio" id="single" name="starters" value="c-1" class="card-radio" checked/>
+        <label for="single">Single</label><br>
+        <input type="radio" id="2combo" name="starters" value="c-2" class="card-radio"/>
+        <label for="2combo">2 Combo</label><br>
+        <input type="radio" id="3combo" name="starters" value="c-3" class="card-radio"/>
+        <label for="3combo">3 Combo</label><br>
+        <input type="radio" id="4combo" name="starters" value="c-4" class="card-radio"/>
+        <label for="4combo">4 Combo</label><br>
+        <input type="radio" id="5combo" name="starters" value="c-5" class="card-radio"/>
+        <label for="5combo">5 Combo</label><br>
+        <input type="radio" id="6combo" name="starters" value="c-6" class="card-radio"/>
+        <label for="6combo">6 Combo</label><br>
+      </div>
+
+      <div class="menu-item">
+        <input type="button" id="calculate" value="Calcualte" class="calc-btn"/>
+        <input type="input" id="tests" placeholder="Enter # of tests..." class="number-of-tests"/>
+      </div>
+
+      <div class="menu-item">
+        <div class="combo-tracker"></div>
+      </div>
+    </div>
+
+    <div class="deck"></div>
+
+    <div class="toast"><span class="toast-message"></span><span class="toast-close" onclick="handleToastClose()">close</span></div>
+
+    <div class="spinner"></div>
+  </body>
+</html>

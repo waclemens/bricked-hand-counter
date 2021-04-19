@@ -1,0 +1,128 @@
+.menu {
+    display: grid;
+    grid-template-columns: 7rem 17rem 17rem;
+    padding: .5rem;
+}
+
+.deck {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    padding: 1rem;
+}
+
+.card {
+    border: .1rem solid #000000;
+    width: 70%;
+    height: 10vw;
+    margin: 8% auto;
+    position: relative;
+}
+
+.combo-id {
+    width: 16rem;
+}
+
+.combo-tracker {
+    overflow: auto;
+    border: solid;
+    width: 10rem;
+    height: 8rem;
+}
+
+.combo-tracker-item {
+    display: block;
+    margin: .2rem 0;
+    background: #00000024;
+    cursor: pointer;
+}
+
+.combo-tracker-item:hover {
+    background: #0000006b;
+}
+
+.combo {
+    position: absolute;
+    width: 95%;
+    height: 97%;
+    opacity: 60%;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid;
+    border-color: #000000;
+    border-width: .5rem;
+    z-index: -1;
+}
+
+.c-1 {background: #e6194B;}
+
+.c-2 {background: #3cb44b;}
+
+.c-3 {background: #ffe119;}
+
+.c-4 {background: #4363d8;}
+
+.c-5 {background: #f58231;}
+
+.c-6 {background: #911eb4;}
+
+.toast {
+    visibility: hidden;
+    min-width: 2rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: .3rem;
+    padding: 1.4rem;
+    position: absolute;
+    z-index: 5;
+    right: 1%;
+    top: 3%;
+    font-size: 17px;
+    white-space: pre-wrap;
+}
+
+.toast-close {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0;
+    cursor: pointer;
+}
+.toast-close:before,
+.toast-close:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 20px;
+    background-color: #F0F0F0;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
+    content: '';
+}
+.toast-close:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.spinner {
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    visibility: hidden;
+    border: .5rem solid #0000001a;
+    border-radius: 50%;
+    border-top: .5rem solid #0099ffc4;
+    width: 1rem;
+    height: 1rem;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
